@@ -13,5 +13,21 @@ namespace DemoApplication
         {
 
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            Response.Write(txtName.Text + "</br>");
+
+            Response.Write(lstLocation.SelectedItem.Text + "</br>");
+
+            lblName.Visible = false;
+            txtName.Visible = false;
+            lstLocation.Visible = false;
+            chkC.Visible = false;
+            chkASP.Visible = false;
+            radioMale.Visible = false;
+            radioFemale.Visible = false;
+            btnSubmit.Visible = false;
+        }
     }
 }
